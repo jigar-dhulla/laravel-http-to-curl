@@ -11,12 +11,12 @@ class HttpToCurlServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        PendingRequest::macro('ddWithCurl', function() {
+        PendingRequest::macro('ddWithCurl', function () {
             /** @var PendingRequest $this */
             $values = func_get_args();
 
             return self::beforeSending(function (Request $request, array $options) use ($values) {
-                foreach(array_merge($values, [CurlCommandLineGenerator::generate($request, $options)]) as $value) {
+                foreach (array_merge($values, [CurlCommandLineGenerator::generate($request, $options)]) as $value) {
                     VarDumper::dump($value);
                 }
 

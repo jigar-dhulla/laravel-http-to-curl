@@ -19,6 +19,7 @@
     ],
     "require": {
         "php": "^8.0",
+        "friendsofphp/php-cs-fixer": "^3.12",
         "illuminate/support": "^8.71|^9.0",
         "jigarakatidus/command-line-generator": "dev-develop"
     },

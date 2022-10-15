@@ -19,17 +19,17 @@ class CurlCommandLineGenerator
             }
         }
 
-        if(in_array($request->method(), ['post', 'put', 'patch'])) {
+        if (in_array($request->method(), ['post', 'put', 'patch'])) {
             // Set Data according to Json
-            if($request->isJson()) {
+            if ($request->isJson()) {
                 $data = json_encode($request->data());
             }
 
             // Set Data according to Form
-            if($request->isForm()) {
+            if ($request->isForm()) {
                 $data = http_build_query($request->data());
             }
-            
+
             $commandGenerator->addOption('d', $data);
 
             // TODO Multipart

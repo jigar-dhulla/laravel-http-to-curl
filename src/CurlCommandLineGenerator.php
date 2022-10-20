@@ -7,7 +7,7 @@ use jigarakatidus\CommandLineGenerator;
 
 class CurlCommandLineGenerator
 {
-    public static function generate(Request $request, array $options): string
+    public static function generate(Request $request, array $options = []): string
     {
         // Set binary
         $commandGenerator = new CommandLineGenerator('curl');
@@ -19,7 +19,7 @@ class CurlCommandLineGenerator
             }
         }
 
-        if (in_array($request->method(), ['post', 'put', 'patch'])) {
+        if (in_array(strtolower($request->method()), ['post', 'put', 'patch'])) {
             // Set Data according to Json
             if ($request->isJson()) {
                 $data = json_encode($request->data());

@@ -7,7 +7,7 @@ This will create a macro for `PendingRequest` which will expose the new method `
 You can pull in the package via composer:
 
 ``` bash
-composer require jigarakatidus/laravel-http-to-curl --dev
+composer require jigarakatidus/laravel-http-to-curl
 ```
 
 The package will automatically register itself
@@ -15,7 +15,7 @@ The package will automatically register itself
 ## Usage
 
 ```php
-Http::ddWithCurl('variable')
+Http::ddWithCurl()
     ->acceptJson()
     ->asForm()
     ->withBasicAuth('username', 'password')

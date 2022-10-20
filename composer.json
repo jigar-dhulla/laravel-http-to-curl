@@ -21,7 +21,7 @@
         "php": "^8.0",
         "friendsofphp/php-cs-fixer": "^3.12",
         "illuminate/support": "^8.71|^9.0",
-        "jigarakatidus/command-line-generator": "dev-develop"
+        "jigarakatidus/command-line-generator": "^1.0.0-alpha"
     },
     "require-dev": {
         "mockery/mockery": "^1.4.2",

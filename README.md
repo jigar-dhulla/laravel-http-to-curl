@@ -1,6 +1,6 @@
-# Extended Http to dump and die with Curl command
+# Laravel HTTP to Curl
 
-This will create a macro for `PendingRequest` which will expose the new method `ddWithCurl` for `Http` Facade.
+Simple tool to dump the raw curl command from Laravel HTTP Request.
 
 ## Installation
 

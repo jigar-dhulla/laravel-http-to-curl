@@ -22,7 +22,7 @@ class CurlCommandLineGenerator
         if (in_array(strtolower($request->method()), ['post', 'put', 'patch'])) {
             // Set Data according to Json
             if ($request->isJson()) {
-                $data = json_encode($request->data());
+                $data = json_encode($request->data(), JSON_UNESCAPED_SLASHES);
             }
 
             // Set Data according to Form

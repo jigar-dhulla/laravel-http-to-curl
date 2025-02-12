@@ -7,7 +7,7 @@ Simple tool to dump the raw curl command from Laravel HTTP Request.
 You can pull in the package via composer:
 
 ``` bash
-composer require jigarakatidus/laravel-http-to-curl
+composer require --dev jigarakatidus/laravel-http-to-curl
 ```
 
 The package will automatically register itself

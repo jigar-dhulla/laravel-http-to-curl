@@ -5,15 +5,12 @@ namespace jigarakatidus\HttpToCurl\Tests;
 use GuzzleHttp\Psr7\Request as Psr7Request;
 use Illuminate\Http\Client\Request;
 use jigarakatidus\HttpToCurl\CurlCommandLineGenerator;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 class CurlCommandLineGeneratorTest extends TestCase
 {
-    /**
-     * @test
-     *
-     * @return void
-     */
+    #[Test]
     public function it_should_return_get_command(): void
     {
         $command = CurlCommandLineGenerator::generate(new Request(new Psr7Request('get', 'https://example.com')));
@@ -21,11 +18,7 @@ class CurlCommandLineGeneratorTest extends TestCase
         $this->assertEquals($command, "curl -H 'Host: example.com' -X 'GET' 'https://example.com'");
     }
 
-    /**
-     * @test
-     *
-     * @return void
-     */
+    #[Test]
     public function it_should_return_get_command_with_parameters(): void
     {
         $command = CurlCommandLineGenerator::generate(new Request(new Psr7Request('get', 'https://example.com?foo=bar')));
@@ -33,11 +26,7 @@ class CurlCommandLineGeneratorTest extends TestCase
         $this->assertEquals($command, "curl -H 'Host: example.com' -X 'GET' 'https://example.com?foo=bar'");
     }
 
-    /**
-     * @test
-     *
-     * @return void
-     */
+    #[Test]
     public function it_should_return_post_command_with_form_body(): void
     {
         $psr7Request = new Psr7Request(
@@ -57,11 +46,7 @@ class CurlCommandLineGeneratorTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     *
-     * @return void
-     */
+    #[Test]
     public function it_should_return_post_command_with_json_body(): void
     {
         $psr7Request = new Psr7Request(

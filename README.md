@@ -14,21 +14,50 @@ The package will automatically register itself
 
 ## Usage
 
+### Basic GET Request
+
 ```php
 Http::ddWithCurl()
-    ->acceptJson()
-    ->asForm()
-    ->withBasicAuth('username', 'password')
-    ->get('https://example.com/padfhj', [
-        'foo' => 'foobar',
-        'bar' => 'barfoo',
+    ->get('https://example.com/api/resource');
+```
+
+Outputs
+
+```bash
+curl -H 'User-Agent: GuzzleHttp/7' -X 'GET' 'https://example.com/api/resource'
+```
+
+### GET Request with Query Parameters
+
+```php
+Http::ddWithCurl()
+    ->get('https://example.com/api/resource', [
+        'param1' => 'value1',
+        'param2' => 'value2',
     ]);
 ```
 
 Outputs
 
 ```bash
-curl -H 'User-Agent: GuzzleHttp/7' -H 'Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=' -H 'Host: example.com' -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -X 'GET' 'https://example.com/padfhj?foo=foobar&bar=barfoo'
+curl -H 'User-Agent: GuzzleHttp/7' -X 'GET' 'https://example.com/api/resource?param1=value1&param2=value2'
+```
+
+### POST Request with JSON Payload
+
+```php
+Http::ddWithCurl()
+    ->acceptJson()
+    ->post('https://example.com/api/resource', [
+        'key1' => 'value1',
+        'key2' => 'value2',
+    ]);
+```
+
+Outputs
+
+```bash
+curl -H 'User-Agent: GuzzleHttp/7' -H 'Accept: application/json' -H 'Content-Type: application/json' -X 'POST' 'https://example.com/api/resource' -d '{"key1":"value1","key2":"value2"}'
 ```
 
 ## Changelog

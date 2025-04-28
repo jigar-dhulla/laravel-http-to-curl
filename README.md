@@ -1,8 +1,7 @@
 # Laravel HTTP to Curl
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jigar-dhulla/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigar-dhulla/laravel-http-to-curl)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/jigar-dhulla/laravel-http-to-curl/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mr-punyapal/laravel-extended-relationships/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/jigar-dhulla/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigar-dhulla/laravel-http-to-curl)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/jigarakatidus/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigar-dhulla/laravel-http-to-curl)
+[![Total Downloads](https://img.shields.io/packagist/dt/jigarakatidus/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigarakatidus/laravel-http-to-curl)
 
 
 Simple tool to dump the raw curl command from Laravel HTTP Request.

@@ -30,7 +30,9 @@ class CurlCommandLineGenerator
                 $data = http_build_query($request->data());
             }
 
-            $commandGenerator->addOption('d', $data);
+            if (!empty($data)) {
+                $commandGenerator->addOption('d', $data);
+            }
 
             // TODO Multipart
         }

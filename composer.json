@@ -27,6 +27,7 @@
         "guzzlehttp/psr7": "^2.0",
         "illuminate/http": "^8.71 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
         "mockery/mockery": "^1.4.2",
+        "orchestra/testbench": "^9.0 || ^10.0 || ^11.0",
         "phpunit/phpunit": "^10.0|^11.0|^12.0"
     },
     "suggest": {},

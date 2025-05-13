@@ -24,6 +24,8 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.12",
+        "guzzlehttp/psr7": "^2.0",
+        "illuminate/http": "^8.71 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
         "mockery/mockery": "^1.4.2",
         "phpunit/phpunit": "^10.0|^11.0|^12.0"
     },

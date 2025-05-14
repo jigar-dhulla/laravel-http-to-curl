@@ -4,7 +4,9 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/jigarakatidus/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigarakatidus/laravel-http-to-curl)
 
 
-Simple tool to dump the raw curl command from Laravel HTTP Request.
+This package has two use-cases:
+1. Simple dump and die with curl command for local development for troubleshooting the http request.
+2. Enable logging curl command for each request in the logs.
 
 ## Installation
 
@@ -63,9 +65,8 @@ Outputs
 ```bash
 curl -H 'User-Agent: GuzzleHttp/7' -H 'Accept: application/json' -H 'Content-Type: application/json' -X 'POST' 'https://example.com/api/resource' -d '{"key1":"value1","key2":"value2"}'
 ```
-## Configuration
 
-### Automatic Request Logging
+## Automatic Request Logging
 
 The package includes automatic logging of HTTP requests as cURL commands. You can publish the configuration file using the following command:
 ```bash

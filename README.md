@@ -69,17 +69,17 @@ curl -H 'User-Agent: GuzzleHttp/7' -H 'Accept: application/json' -H 'Content-Typ
 
 ## Automatic Request Logging
 
-The package includes automatic logging of HTTP requests as cURL commands. Optionally, you can publish the configuration file using the following command:
+To enable the automatic logging of curl command for each request, configure these options directly through environment variables:
+
+- `HTTP_TO_CURL_LOGGING`: Enable/disable logging (defaults to false)
+- `HTTP_TO_CURL_LOG_LEVEL`: Set log level (defaults to "debug")
+- `HTTP_TO_CURL_LOG_CHANNEL`: Select log channel (defaults to "stack")
+
+Optionally, you can publish the configuration file using the following command:
 ```bash
 php artisan vendor:publish --tag=http-to-curl-config
 ```
 This will create a `config/http-to-curl.php` file where you can customize the logging behavior.
-
-You can also configure these options directly through environment variables:
-
-- `HTTP_TO_CURL_LOGGING`: Enable/disable logging (defaults to true)
-- `HTTP_TO_CURL_LOG_LEVEL`: Set log level (defaults to "debug")
-- `HTTP_TO_CURL_LOG_CHANNEL`: Select log channel (defaults to "stack")
 
 ### Logging Example
 

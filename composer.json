@@ -19,16 +19,16 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^8.71|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/support": "^8.71|^9.0|^10.0|^11.0|^12.0|^13.0",
         "jigarakatidus/command-line-generator": "^1.0.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.12",
         "guzzlehttp/psr7": "^2.0",
-        "illuminate/http": "^8.71 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
+        "illuminate/http": "^8.71 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0",
         "mockery/mockery": "^1.4.2",
         "orchestra/testbench": "^9.0 || ^10.0 || ^11.0",
-        "phpunit/phpunit": "^10.0|^11.0|^12.0"
+        "phpunit/phpunit": "^9.0|^10.0|^11.0|^12.0"
     },
     "suggest": {},
     "autoload": {

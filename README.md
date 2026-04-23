@@ -1,6 +1,6 @@
 # Laravel HTTP to Curl
 
-[![Laravel Compatibility](https://badge.laravel.cloud/badge/jigarakatidus/laravel-http-to-curl?style=for-the-badge)](https://packagist.org/packages/jigarakatidus/laravel-http-to-curl)
+[![Laravel Compatibility](https://badge.laravel.cloud/badge/jigarakatidus/laravel-http-to-curl?style=flat)](https://packagist.org/packages/jigarakatidus/laravel-http-to-curl)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jigarakatidus/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigar-dhulla/laravel-http-to-curl)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/jigar-dhulla/laravel-http-to-curl/php.yml?branch=main&label=tests&style=flat-square)](https://github.com/jigar-dhulla/laravel-http-to-curl/actions/workflows/php.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/jigarakatidus/laravel-http-to-curl.svg?style=flat-square)](https://packagist.org/packages/jigarakatidus/laravel-http-to-curl)
